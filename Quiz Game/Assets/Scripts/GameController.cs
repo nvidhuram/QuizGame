@@ -5,22 +5,18 @@ using TMPro;
 using UnityEngine.UI;
 
 public class GameController : MonoBehaviour
-{   
-    [SerializeField]            //Button variables
-    private Button option1;
-    private Button option2;
-    private Button option3;
-    private Button option4;
+{
+    [SerializeField]           //Button variables
+    private Button option1, option2, option3, option4;
+    
+
     
     [SerializeField]                    //Text of the buttons
-    private TextMeshProUGUI op1Text;
-    private TextMeshProUGUI op2Text;
-    private TextMeshProUGUI op3Text;
-    private TextMeshProUGUI op4Text;
-    private TextMeshProUGUI questionDisplayText;     //question text
-    private TextMeshProUGUI scoreDisplayText;        //Score text
-    private TextMeshProUGUI timeRemainingDisplayText;    //Time Remaining Text
-    private TextMeshProUGUI questionNumberText;      //Question number text
+    private TextMeshProUGUI op1Text, op2Text, op3Text, op4Text;
+    public TextMeshProUGUI questionDisplayText;     //question text
+    public TextMeshProUGUI scoreDisplayText;        //Score text
+    public TextMeshProUGUI timeRemainingDisplayText;    //Time Remaining Text
+    public TextMeshProUGUI questionNumberText;      //Question number text
 
 
     public static float playerScore = 0;        // float to calculate score
